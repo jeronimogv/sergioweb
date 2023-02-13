@@ -1,0 +1,57 @@
+@use 'variables' as v;
+
+
+.nav__bar{
+    background-color:v.$logo_green;
+    display:flex;
+   
+
+}
+.nav__bar--company{
+    display: flex;
+    justify-content:left;
+    padding:10px 20px; 
+    align-items: center;
+        h2{
+            font-size: 20px;
+        }
+
+}
+.nav__bar--logo{
+    width: 100px;
+    padding-right: 20px;
+
+}
+
+.nav__bar--menu{
+    
+    .nav__bar--menu-items{
+        display: flex;
+        padding: 30px 20px;
+        list-style: none;
+        
+        font-size: 14px;
+        .nav__bar--links{
+            padding: 0 10px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+
+}
+
+
+
+.nav__bar--mobile{
+    display: none;
+    
+}
+
+.nav__bar__mobile--menu{
+    display:none;
+}
+  
+
+

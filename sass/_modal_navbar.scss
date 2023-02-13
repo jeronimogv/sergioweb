@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+// mobile modal
+@media all and (max-width:1115px){
+    .nav__bar__mobile--menu{
+        display:block;
+        padding-left: 20px;
+    }
+    .nav__bar--company{
+
+        display: flex;
+        justify-content: space-between;
+        padding:10px 20px; 
+        align-items: center;
+            h2{
+                font-size: 14px;
+            
+    
+            }
+    
+    }
+    .nav__bar--logo{
+        width: 60px;
+      
+    }
+
+    .nav__bar--menu{
+        display:none;
+    }
+
+}

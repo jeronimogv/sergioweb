@@ -1,0 +1,19 @@
+@use 'initial';
+@use 'variables';
+@use 'head';
+@use 'header';
+@use 'navbar';
+@use 'modalnavbar';
+@use 'modal_navbar';
+
+
+.main__container{
+    width: 375px;
+    border:1px solid black;
+    margin:auto;
+   
+    @media (min-width:1115px){
+        width:1115px;
+    }
+}
+

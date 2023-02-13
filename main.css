@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.head {
+  width: 100%;
+  background-color: yellow;
+  display: block;
+  text-align: center;
+}
+.head h1 {
+  font-size: 16px;
+}
+.head h2 {
+  font-size: 12px;
+}
+
+.nav__bar {
+  background-color: #09e92e;
+  display: flex;
+}
+
+.nav__bar--company {
+  display: flex;
+  justify-content: left;
+  padding: 10px 20px;
+  align-items: center;
+}
+.nav__bar--company h2 {
+  font-size: 20px;
+}
+
+.nav__bar--logo {
+  width: 100px;
+  padding-right: 20px;
+}
+
+.nav__bar--menu .nav__bar--menu-items {
+  display: flex;
+  padding: 30px 20px;
+  list-style: none;
+  font-size: 14px;
+}
+.nav__bar--menu .nav__bar--menu-items .nav__bar--links {
+  padding: 0 10px;
+}
+.nav__bar--menu .nav__bar--menu-items .nav__bar--links a {
+  text-decoration: none;
+}
+
+.nav__bar--mobile {
+  display: none;
+}
+
+.nav__bar__mobile--menu {
+  display: none;
+}
+
+@media all and (max-width: 1115px) {
+  .nav__bar__mobile--menu {
+    display: block;
+    padding-left: 20px;
+  }
+  .nav__bar--company {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  .nav__bar--company h2 {
+    font-size: 14px;
+  }
+  .nav__bar--logo {
+    width: 60px;
+  }
+  .nav__bar--menu {
+    display: none;
+  }
+}
+.main__container {
+  width: 375px;
+  border: 1px solid black;
+  margin: auto;
+}
+@media (min-width: 1115px) {
+  .main__container {
+    width: 1115px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
