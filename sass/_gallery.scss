@@ -1,0 +1,68 @@
+@use 'variables' as v;
+
+.gallery{
+    &__image--container{
+    height: 300px;      
+    width: 350px;
+    margin:auto;
+    background-image: url(../images/concreate/m6.jpeg);
+    background-size: cover;
+    border-radius: 5px;
+
+    //@media afecta a desktop view
+      @media (min-width:1115px){
+        height: 500px;      
+        width: 800px;
+        border-radius: 10px;
+      }
+    }
+    &__image-previous{
+        background-color: aliceblue;
+        border-radius: 50%;
+        position: absolute;
+        top:350px;
+        left:300px;
+        padding: 10px;
+        display:none;
+        &:hover{
+          cursor: pointer;
+        }
+        @media(min-width: 1115px){
+          display:block;
+        }
+    }
+    &__image-next{
+      background-color:aliceblue;
+        border-radius: 50%;
+        position: absolute;
+        top:350px;
+        right: 300px;
+        padding: 10px;
+        display:none;
+        &:hover{
+          cursor: pointer;
+        }
+        @media(min-width: 1115px){
+          display:block;
+          
+        }
+    }
+  &__thumnails{
+    display:block; 
+    display:flex;
+    justify-content: space-around; 
+    @media(min-width: 1115px){
+      display:none;
+    }
+  }
+  &__thumnail{
+    margin: 10px 0px 10px 0px;
+    border-radius: 3px;
+    width:40px;
+    height:40px;
+    &:hover{
+      cursor: pointer;
+    }
+  }  
+
+}
