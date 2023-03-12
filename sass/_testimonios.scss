@@ -2,15 +2,17 @@
 .testimonial__container{
  @media (min-width:1115px) {
     display:flex ;
-    margin-top: 20px;
+  
 
  } 
 }
 .testimonial{
+    background-color:v.$background;
     width: 375px;
     padding: 20px 20px;
 
     &__image{
+        background-repeat: none;
         display:flex;
         justify-content: center;
         img{
@@ -18,10 +20,12 @@
             height: 80px;
             border-radius: 50%;
             margin:20px 20px;
-            &:hover{
-                cursor: pointer;
-            }
+            
         } 
+    }
+    &__details{
+        padding: 10px;
+        font-family: v.$font;
     }
 
 }

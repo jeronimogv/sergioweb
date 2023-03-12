@@ -1,7 +1,9 @@
 @use 'variables' as v;
 
 .gallery{
+    background-color:v.$background;
     &__image--container{
+    
     height: 300px;      
     width: 350px;
     margin:auto;

@@ -1,17 +1,29 @@
 @use 'initial';
-@use 'variables';
+@use 'variables' as v;
 @use 'head';
 @use 'header';
 @use 'navbar';
 @use 'modal_navbar';
 @use 'gallery';
 @use 'testimonios';
+@use 'footer';
 
+body{
+    
+    @media (min-width:1115px){
+        background: linear-gradient( rgb(36, 235, 142), rgb(8, 141, 68));
+    
+        
+    }
+}
 
 .main__container{
     width: 375px;
-    border:1px solid black;
+    // border:1px solid black;
     margin:auto;
+    
+   
+    
    
     @media (min-width:1115px){
         width:1115px;

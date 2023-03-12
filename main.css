@@ -11,6 +11,8 @@ body {
 
 .head {
   width: 100%;
+  height: 50px;
+  padding: 10px 10px;
   background-color: yellow;
   display: block;
   text-align: center;
@@ -18,71 +20,167 @@ body {
 .head h1 {
   font-size: 16px;
 }
+.head h1:hover {
+  transform: scale(120%);
+}
 .head h2 {
   font-size: 12px;
+}
+.head h2:hover {
+  transform: scale(120%);
+}
+@media (min-width: 1115px) {
+  .head {
+    height: 60px;
+    padding: 10px 10px;
+  }
+  .head h1 {
+    font-size: 20px;
+  }
+  .head h1:hover {
+    transform: scale(130%);
+  }
+  .head h2 {
+    font-size: 14px;
+  }
+  .head h2:hover {
+    transform: scale(130%);
+  }
+}
+
+.header {
+  position: relative;
 }
 
 .nav__bar {
   background-color: #09e92e;
-  display: flex;
+}
+
+.nav__bar__icon--menu {
+  display: block;
+  padding-left: 20px;
+}
+.nav__bar__icon--menu:hover {
+  cursor: pointer;
 }
 
 .nav__bar--company {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   padding: 10px 20px;
   align-items: center;
 }
 .nav__bar--company h2 {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .nav__bar--logo {
-  width: 100px;
-  padding-right: 20px;
+  width: 60px;
 }
 
-.nav__bar--menu .nav__bar--menu-items {
-  display: flex;
-  padding: 30px 20px;
-  list-style: none;
-  font-size: 14px;
-}
-.nav__bar--menu .nav__bar--menu-items .nav__bar--links {
-  padding: 0 10px;
-}
-.nav__bar--menu .nav__bar--menu-items .nav__bar--links a {
-  text-decoration: none;
+.nav__bar--menu {
+  display: none;
 }
 
 .nav__bar--mobile {
   display: none;
 }
 
-.nav__bar__mobile--menu {
-  display: none;
-}
-
-@media all and (max-width: 1115px) {
-  .nav__bar__mobile--menu {
-    display: block;
-    padding-left: 20px;
+@media (min-width: 1115px) {
+  .nav__bar {
+    background-color: #09e92e;
+    display: flex;
   }
   .nav__bar--company {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     padding: 10px 20px;
     align-items: center;
   }
-  .nav__bar--company h2 {
-    font-size: 14px;
+  .nav__bar--company h2 a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  .nav__bar--company h2 a:hover {
+    font-size: 17px;
+    border-bottom: 2px solid blue;
+    margin-left: 0px;
+    padding-bottom: 3px;
+  }
+  .nav__bar--company h2 a:visited {
+    color: black;
   }
   .nav__bar--logo {
-    width: 60px;
+    width: 100px;
+    padding-right: 20px;
   }
   .nav__bar--menu {
+    display: block;
+  }
+  .nav__bar--menu .nav__bar--menu-items {
+    display: flex;
+    padding: 30px 5px;
+    list-style: none;
+    font-size: 14px;
+  }
+  .nav__bar--menu .nav__bar--menu-items .nav__bar--links {
+    padding: 0 10px;
+  }
+  .nav__bar--menu .nav__bar--menu-items .nav__bar--links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px 10px 0px;
+  }
+  .nav__bar--menu .nav__bar--menu-items .nav__bar--links a:visited {
+    color: black;
+  }
+  .nav__bar--menu .nav__bar--menu-items .nav__bar--links a:hover {
+    font-weight: bold;
+    padding: 5px 5px;
+    border-bottom: 2px solid blue;
+  }
+  .nav__bar__icon--menu {
     display: none;
   }
+}
+.modal_navbar {
+  display: none;
+  width: 200px;
+  height: 1372px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.modal_navbar_close--menu {
+  padding: 20px 20px;
+  margin-top: 10px;
+}
+.modal_navbar_close--menu:hover {
+  cursor: pointer;
+}
+.modal_navbar_menu--items {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal_navbar_links {
+  list-style: none;
+}
+.modal_navbar_links a {
+  text-decoration: none;
+  padding: 10px 20px;
+}
+@media (min-width: 1115px) {
+  .modal_navbar {
+    display: none;
+  }
+}
+
+.gallery {
+  background-color: rgb(57, 219, 16);
 }
 .gallery__image--container {
   height: 300px;
@@ -156,15 +254,16 @@ body {
 @media (min-width: 1115px) {
   .testimonial__container {
     display: flex;
-    margin-top: 20px;
   }
 }
 
 .testimonial {
+  background-color: rgb(57, 219, 16);
   width: 375px;
   padding: 20px 20px;
 }
 .testimonial__image {
+  background-repeat: none;
   display: flex;
   justify-content: center;
 }
@@ -174,13 +273,43 @@ body {
   border-radius: 50%;
   margin: 20px 20px;
 }
-.testimonial__image img:hover {
+.testimonial__details {
+  padding: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.footer {
+  height: 40px;
+  padding: 10px;
+  background-color: rgba(7, 4, 10, 0.966);
+  width: 375px;
+  text-align: center;
+  margin: auto;
+  text-decoration-line: none;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 10px;
+}
+.footer a:hover {
   cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .footer {
+    width: 1115px;
+  }
+}
+
+@media (min-width: 1115px) {
+  body {
+    background: linear-gradient(rgb(36, 235, 142), rgb(8, 141, 68));
+  }
 }
 
 .main__container {
   width: 375px;
-  border: 1px solid black;
   margin: auto;
 }
 @media (min-width: 1115px) {

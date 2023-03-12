@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.gallery__image--stone {
+  height: 300px;
+  width: 350px;
+  margin: auto;
+  background-image: url(../images/stone/stone1.jpeg);
+  background-size: cover;
+  border-radius: 5px;
+}
+@media (min-width: 1115px) {
+  .gallery__image--stone {
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+  }
+}
+
+.details {
+  background-color: rgb(57, 219, 16);
+  padding-top: 20px;
+  margin: auto;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.details h3 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.details__paragraph {
+  text-align: justify;
+  margin: 5px 15px;
+}
+.details__slogan {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.details ul {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 1115px) {
+  .details h3 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+  .details__paragraph {
+    text-align: justify;
+    margin: 10px 80px;
+  }
+  .details__slogan {
+    padding-bottom: 15px;
+    text-size-adjust: 20;
+    text-align: center;
+  }
+  .details ul {
+    margin: 0px;
+    list-style: none;
+    padding-bottom: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details ul li {
+    font-family: "Kumbh Sans", sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=stone.css.map */

@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+.footer{
+    height: 40px;
+    padding: 10px;
+    background-color: v.$footer;
+    width: 375px;
+    text-align: center;
+    margin:auto;
+    text-decoration-line: none;
+    & a{
+        text-decoration: none;
+        color: white;
+        font-family: v.$font;
+        font-size: 10px;
+       
+    }
+   
+    & a:hover{
+        cursor: pointer;
+    }
+    @media (min-width:1115px){
+        width: 1115px;
+    }
+}

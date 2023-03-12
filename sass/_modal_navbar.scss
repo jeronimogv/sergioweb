@@ -1,31 +1,46 @@
 @use 'variables' as v;
 
-// mobile modal
-@media all and (max-width:1115px){
-    .nav__bar__mobile--menu{
-        display:block;
-        padding-left: 20px;
+.modal_navbar{
+    display:none;
+    width: 200px;
+    height:1372px;
+    background-color: aliceblue;
+    position: absolute;
+    top:0px;
+    left:0px;
+    
+    &_close--menu {
+        padding:20px 20px;
+        margin-top: 10px;
+        &:hover{
+            cursor: pointer;
+        }
     }
-    .nav__bar--company{
-
+    &_menu--items{
+        height: 250px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        padding:10px 20px; 
-        align-items: center;
-            h2{
-                font-size: 14px;
-            
-    
-            }
-    
-    }
-    .nav__bar--logo{
-        width: 60px;
       
     }
-
-    .nav__bar--menu{
-        display:none;
+    &_links{
+        list-style: none;
+        a{
+            text-decoration: none;
+            padding:10px 20px;
+          
+        }
+        // & a:hover{
+        //     transform: scale(120%);
+           
+        // }
     }
+       
+@media (min-width:1115px) {
+    display:none;
+    
+}
+
+
 
 }
