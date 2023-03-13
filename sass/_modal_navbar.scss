@@ -2,7 +2,7 @@
 
 .modal_navbar{
     display:none;
-    width: 200px;
+    width: 220px;
     height:1372px;
     background-color: aliceblue;
     position: absolute;
@@ -28,6 +28,8 @@
         a{
             text-decoration: none;
             padding:10px 20px;
+            color: black;
+            font-weight: 400;
           
         }
         // & a:hover{
